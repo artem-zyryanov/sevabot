@@ -98,7 +98,7 @@ class StatefulModule:
         if not path.endswith(".py"):
             return False
 
-        f = open(path, "rb")
+        f = open(path, "r")
         line1 = f.readline()
         line2 = f.readline()
         f.close()
