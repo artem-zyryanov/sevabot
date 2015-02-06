@@ -107,5 +107,6 @@ class CommandHandler:
     def builtin_reload(self, args, msg, status):
         """Reload command modules.
         """
+        msg.Chat.SendMessage('I alive: ')
         commands = modules.load_modules(self.sevabot)
         msg.Chat.SendMessage('Available commands: %s' % ', '.join(commands))
