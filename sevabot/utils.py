@@ -38,6 +38,7 @@ def fail_safe(func):
         try:
             return func(*args, **kwargs)
         except Exception as e:
+            raise e
             logger.exception(e)
             return False
 
