@@ -1,4 +1,4 @@
-#!/sevabot
+﻿#!/sevabot
 
 # -*- coding: utf-8 -*-
 
