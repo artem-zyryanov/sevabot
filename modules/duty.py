@@ -1,6 +1,5 @@
+﻿# -*- coding: utf-8 -*-
 #!/sevabot
-
-# -*- coding: utf-8 -*-
 
 """
 Simple conference call hosting

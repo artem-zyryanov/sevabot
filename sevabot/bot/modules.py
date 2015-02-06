@@ -99,9 +99,10 @@ class StatefulModule:
             return False
 
         f = open(path, "rb")
-        data = f.read(16)
+        line1 = f.readline()
+        line2 = f.readline()
         f.close()
-        if data.startswith("#!/sevabot"):
+        if line1.startswith("#!/sevabot") or line2.startswith("#!/sevabot") :
             return True
 
         return False
