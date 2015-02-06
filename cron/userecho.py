@@ -6,12 +6,12 @@ import urllib2
 
 CHAT_ID = '2f5ec32c37ca53bf9aa46ca3098d2629'
 
-messages_filename = 'userecho_messages'
+messages_filename = os.path.join(os.path.dirname(os.path.realpath(__file__)),'userecho_messages')
 
 messages_file = open(messages_filename, 'r')
 messages = messages_file.readlines()
 messages_file.close()
-last_id_filename = 'userecho_last_id'
+last_id_filename = os.path.join(os.path.dirname(os.path.realpath(__file__)),'userecho_last_id')
 
 last_id = 0
 if os.path.isfile(last_id_filename):
