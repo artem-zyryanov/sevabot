@@ -65,8 +65,6 @@ class CommandHandler:
         # We need utf-8 for shlex
         body = ensure_unicode(msg.Body).encode('utf-8')
 
-        logger.debug(u"Processing message, body %s" % body)
-
         # shlex dies on unicode on OSX with null bytes all over the string
         try:
             words = shlex.split(body, comments=False, posix=True)
