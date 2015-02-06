@@ -1,4 +1,4 @@
-﻿#!/sevabot
+#!/sevabot
 
 # -*- coding: utf-8 -*-
 
@@ -67,7 +67,7 @@ class DutyHandler(StatefulSkypeHandler):
         msg.Chat.SendMessage(u'Дежурит сегодня '+m)
         return True
 
-    def shutdown(self):
+    def shutdown():
         """
         Called when the module is reloaded.
         """
