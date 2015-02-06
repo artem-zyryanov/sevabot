@@ -96,7 +96,7 @@ class CallHandler(StatefulSkypeHandler):
 
         return False
 
-    def shutdown():
+    def shutdown(self):
         """
         Called when the module is reloaded.
         """
