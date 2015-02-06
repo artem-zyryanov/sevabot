@@ -99,8 +99,8 @@ class StatefulModule:
             return False
 
         f = open(path, "r")
-        line1 = f.readline()
-        line2 = f.readline()
+        line1 = ensure_unicode(f.readline())
+        line2 = ensure_unicode(f.readline())
         f.close()
         if line1.startswith("#!/sevabot") or line2.startswith("#!/sevabot") :
             return True
