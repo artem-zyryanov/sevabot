@@ -58,6 +58,7 @@ class DutyHandler(StatefulSkypeHandler):
         if body != u'киса, кто дежурный?':
             return False
 
+        logger.info('Command matched')
         week_num = datetime.date.today().isocalendar()[1]
         f = open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'duty'), 'r')
         d = f.readlines()
