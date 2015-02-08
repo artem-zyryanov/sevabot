@@ -50,7 +50,7 @@ class DutyHandler(StatefulSkypeHandler):
         """
         Override this method to customize a handler.
         """
-
+        logger.debug('On Duty')
         body = ensure_unicode(msg.Body).lower()
 
         logger.debug('Call handler got: {}'.format(body))
