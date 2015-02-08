@@ -14,7 +14,7 @@ import datetime
 from sevabot.bot.stateful import StatefulSkypeHandler
 from sevabot.utils import ensure_unicode
 
-logger = logging.getLogger('Duty')
+logger = logging.getLogger('sevabot')
 
 # Set to debug only during dev
 logger.setLevel(logging.INFO)
