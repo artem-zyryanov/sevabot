@@ -92,7 +92,7 @@ class Sevabot:
         Handle incoming messages.
         """
 
-        logger.debug("Incoming %s - %s - %s: %s" % (status, msg.Chat.FriendlyName,
+        logger.info("Incoming %s - %s - %s: %s" % (status, msg.Chat.FriendlyName,
                                                     msg.FromHandle, ensure_unicode(msg.Body)))
 
         self.handler.handle(msg, status)
