@@ -1,4 +1,3 @@
-#!/sevabot
 """
 
     Simple group chat task manager.

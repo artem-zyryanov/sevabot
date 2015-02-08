@@ -54,8 +54,6 @@ class CommandHandler:
         # and not even displayed in chat UI
         if status == "READ":
             return
-        print msg
-        print msg.Body
         # Check all stateful handlers
         for handler in modules.get_message_handlers():
             print handler
