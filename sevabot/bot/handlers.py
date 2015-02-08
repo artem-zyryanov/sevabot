@@ -39,6 +39,7 @@ class CommandHandler:
             logger.info('Built-in command {} is available.'.format(command_name))
 
     def handle(self, msg, status):
+        logger.info('Handle')
         """Handle command messages.
         """
 
@@ -56,7 +57,7 @@ class CommandHandler:
             return
         # Check all stateful handlers
         for handler in modules.get_message_handlers():
-            print handler
+            logger.info(str(handler))
             processed = handler(msg, status)
             if processed:
                 # Handler processed the message
