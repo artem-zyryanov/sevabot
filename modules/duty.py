@@ -63,7 +63,9 @@ class DutyHandler(StatefulSkypeHandler):
         d = f.readlines()
         f.close()
         m = d[week_num % len(d)]
-        msg.Chat.SendMessage(u'Дежурит сегодня '+m)
+        message_to_send = ensure_unicode(u'Дежурит сегодня ' + m)
+        logger.info(message_to_send)
+        msg.Chat.SendMessage(message_to_send)
         return True
 
     def shutdown(self):
