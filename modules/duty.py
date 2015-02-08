@@ -63,7 +63,7 @@ class DutyHandler(StatefulSkypeHandler):
         f = open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'duty'), 'r')
         d = f.readlines()
         f.close()
-        m = d[week_num % len(d)]
+        m = ensure_unicode(d[week_num % len(d)])
         message_to_send = ensure_unicode(u'Дежурит сегодня ' + m)
         logger.info(message_to_send)
         msg.Chat.SendMessage(message_to_send)
