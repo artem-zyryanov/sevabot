@@ -66,7 +66,7 @@ class DutyHandler(StatefulSkypeHandler):
         msg.Chat.SendMessage(u'Дежурит сегодня '+m)
         return True
 
-    def shutdown():
+    def shutdown(self):
         """
         Called when the module is reloaded.
         """
