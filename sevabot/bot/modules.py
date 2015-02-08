@@ -132,6 +132,7 @@ class StatefulModule:
     @fail_safe
     def handle(self, msg, status):
         logger.info('msg handle')
+        logger.info(str(self.handler))
         return self.handler.handle_message(msg, status)
 
 
