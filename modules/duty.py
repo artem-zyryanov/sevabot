@@ -55,7 +55,7 @@ class DutyHandler(StatefulSkypeHandler):
 
         logger.info('Call handler got: {}'.format(body))
 
-        if body != 'киса, кто дежурный?':
+        if body != u'киса, кто дежурный?':
             return False
 
         week_num = datetime.date.today().isocalendar()[1]
