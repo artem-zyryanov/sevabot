@@ -48,7 +48,7 @@ class StatefulSkypeHandler:
         :return: True if the message was handled and should not be further processed
         """
 
-    def shutdown():
+    def shutdown(self):
         """ Called when the module is reloaded.
 
         In ``shutdown()`` you must
