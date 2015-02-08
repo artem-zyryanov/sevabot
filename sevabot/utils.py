@@ -38,7 +38,8 @@ def fail_safe(func):
         try:
             return func(*args, **kwargs)
         except Exception as e:
-            #logger.exception(e)
+            logger.info(ensure_unicode(e.message))
+            logger.exception(e)
             return False
 
     return closure
