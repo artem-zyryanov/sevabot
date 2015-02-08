@@ -11,7 +11,7 @@ from inspect import getmembers, isclass
 import Skype4Py
 
 from sevabot.bot import handlers
-from sevabot.utils import get_chat_id
+from sevabot.utils import get_chat_id, ensure_unicode
 
 
 logger = logging.getLogger("sevabot")
@@ -93,7 +93,7 @@ class Sevabot:
         """
 
         logger.debug("Incoming %s - %s - %s: %s" % (status, msg.Chat.FriendlyName,
-                                                    msg.FromHandle, msg.Body))
+                                                    msg.FromHandle, ensure_unicode(msg.Body)))
 
         self.handler.handle(msg, status)
 
