@@ -4,7 +4,7 @@ import random
 import urllib
 import urllib2
 
-CHAT_ID = '2f5ec32c37ca53bf9aa46ca3098d2629'
+CHAT_ID = 'a53589a7b38944f06213ab1f6ea732b5'
 
 messages_filename = os.path.join(os.path.dirname(os.path.realpath(__file__)),'userecho_messages')
 

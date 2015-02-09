@@ -55,7 +55,7 @@ class DutyHandler(StatefulSkypeHandler):
 
         logger.info('Call handler got: {}'.format(body))
 
-        if body != u'киса, кто дежурный?':
+        if body != u'ника, кто дежурный?':
             return False
 
         logger.info('Command matched')
